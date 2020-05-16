@@ -1,0 +1,356 @@
+// authors: Lara B, DiegoDev9, FOW Mind
+// last-modified: 16-05-2020
+
+/* Colors */
+
+// Hex
+$white: #fff
+$antiFlashWhite: #fafafa
+$lightBlack: #404040
+$coffee: #6f4e37
+$darkCoffee: #3b2d23
+$lightCoffee: #9e775c
+$superLightCoffee: #ede1d8
+
+// Rgba
+$transparentBlack: rgba(0,0,0,.75)
+
+/* Colors end */
+
+// General
+$bgColor: #f2f2f2
+$bodyFontFamily: 'Raleway', sans-serif, helvetica, arial
+
+// First nav
+$firstNavBg: #453a32
+$firstNavColor: #fafafa
+
+// Main nav bg
+$mainNavBg: #9e7c65
+
+// Banner
+$defaultBannerBg: #111
+
+// Banner item background
+$firstBannerItemBg: url(../img/banner_uno.jpg)
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	scrollbar-color: auto
+
+	&::selection
+		background-color: $darkCoffee
+		color: $superLightCoffee
+
+	&::-webkit-scrollbar,
+	&::-webkit-scrollbar-thumb
+		width: 10px
+		background-color: $lightCoffee
+
+	&::-webkit-scrollbar-thumb:hover
+		background-color: $superLightCoffee
+
+	&::-webkit-scrollbar-track
+		background-color: $darkCoffee
+
+
+body
+	background-color: $bgColor
+	font-family: $bodyFontFamily
+	scroll-behavior: smooth
+
+img
+	max-width: 100%
+
+a
+	text-decoration: none
+
+header
+	.contenedor_navegacion
+		.info_esencial
+			padding: 0 15%
+			background-color: $firstNavBg
+			overflow: hidden
+			height: 50px
+
+			span, a
+				font-size: 13px
+				line-height: 50px
+
+			span
+				color: $firstNavColor
+				float: left
+
+			a
+				color: $white
+				float: right
+				
+				&:hover
+					transform: scale(1.1)
+
+			source,
+			img
+				width: 20px
+				height: 20px
+				margin-top: 15px
+				transition: transform .3s
+
+
+
+		.navegacion
+			display: flex
+			justify-content: space-between
+			align-items: center
+			padding: 1.3em 1.5em
+			background-color: $mainNavBg
+
+			.logo
+				width: 25%
+				max-width: 10em
+
+				img
+					object-fit: cover
+
+			nav
+				text-align: center
+
+				a
+					color: $superLightCoffee
+					font-weight: 600
+					font-size: 14px
+					margin-right: .3em
+					padding: .8em
+					border-radius: 50px
+					position: relative
+
+					&:last-child
+						margin-right: 0
+
+					&:hover
+						color: $antiFlashWhite
+						background-color: $darkCoffee
+
+	.banner_deslizable
+		height: 80vh
+		position: relative
+
+		.circulos_deslizar
+			position: absolute
+			bottom: .8em
+			left: 50%
+			transform: translate(0, -50%)
+			width: 100px
+			height: 30px
+			display: flex
+			align-items: center
+			justify-content: space-between
+			z-index: 100
+
+			.circulo
+				width: 20px
+				height: 20px
+				background-color: $coffee
+				border-radius: 10px
+				cursor: pointer
+
+				&:hover
+					background-color: $lightCoffee
+
+		.banner_item
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: $defaultBannerBg
+			background-size: cover
+			background-attachment: fixed
+			
+			[alt]
+				color: $antiFlashWhite
+
+			h2, p, span, a
+				color: $antiFlashWhite
+
+			h2
+				font-size: 2em
+
+			h2, p, a
+				margin: 15px 30px
+
+			p
+				max-width: 45%
+
+			a
+				display: inline-block
+				padding: .8em 1.2em
+				background-color: $coffee
+
+				&:hover
+					background-color: $lightCoffee
+
+			&.primero,
+			&:first-child
+				z-index: 50
+				background-image: $firstBannerItemBg
+
+				&:before
+					content: ''
+					position: absolute
+					top: 0
+					left: 0
+					width: 100%
+					height: 100%
+					background-color: $transparentBlack
+
+			&.segundo,
+			&:nth-child(2)
+				z-index: 40
+			&.tercero,
+			&:nth-child(3)
+				z-index: 30
+			&.cuarto,
+			&:nth-child(4)
+				z-index: 20
+			&.quinto,
+			&:nth-child(5)
+				z-index: 10
+
+			.contenedor
+				position: relative
+				height: 100%
+				z-index: 100
+
+			.destacado
+				display: flex
+				justify-content: space-between
+				align-items: center
+				height: 100%
+				padding: 0 2em
+
+				.oferta, .cafes
+					background-color: $coffee
+					border-radius: 5px
+					width: 45%
+					height: 50vh
+					overflow-y: auto
+
+					h2, p
+						color: $antiFlashWhite
+
+				.oferta
+					background-image: linear-gradient(90deg, rgba(66,53,44,1) 0%, rgba(111,78,55,1) 35%, rgba(179,121,80,1) 100%)
+					filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#42352c",endColorstr="#b37950",GradientType=1)
+					padding: 1em
+					border: .4em solid $white
+
+					h2, p, a
+						margin: 0
+
+					h2
+						margin-bottom: 1em
+						font-size: 28px
+					
+					p
+						line-height: 2em
+						max-width: inherit
+						font-size: 17px
+
+					p span
+						margin-left: 5px
+						color: $white
+
+				.cafes
+					display: flex
+					justify-content: center
+					align-items: center
+					flex-wrap: wrap
+
+					div
+						width: 50%
+						height: 50%
+						background-color: $lightBlack
+						position: relative
+						border: 2px solid $white
+						
+						&:first-child,
+						img:first-child
+							border-radius: 5px 0 0 0
+
+						&:nth-child(2n),
+						img:nth-child(2n)
+							border-radius: 0 5px 0 0
+
+						&:nth-child(3n),
+						img:nth-child(3n)
+							border-radius: 0 0 0 5px
+
+						&:nth-child(4n),
+						img:nth-child(4n)
+							border-radius: 0 0 5px 0
+
+
+						img
+							width: 100%
+							height: 100%
+							object-fit: cover
+							display: block
+						
+						span
+							color: $antiFlashWhite
+							background-color: $transparentBlack
+							position: absolute
+							bottom: 0
+							left: 0
+							width: 100%
+							padding: .8em 0
+							text-align: center
+							opacity: 0
+							visibility: hidden
+							transition: opacity .15s, visibility .15s
+
+						&:hover span
+							opacity: 1
+							visibility: visible
+							transition: opacity .5s, visibility .5s
+
+#contenedor
+
+	#productos
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+		overflow: hidden
+		margin-bottom: 1em
+
+		.producto
+			width: 33.333333333%
+			max-width: 350px
+			padding: 1em
+			height: 300px
+			overflow-y: auto
+			border-radius: 5px
+
+			.foto_producto
+				width: 100%
+				height: 200px
+				overflow: hidden
+
+				figure
+					border-radius: 5px
+
+					img
+						object-fit: cover
+						object-position: 20%
+						border-radius: 5px
+						padding-bottom: 5px
+
+			article
+				margin: 10px 0
+
+				p
+					text-align: center
+					font-size: 15px
