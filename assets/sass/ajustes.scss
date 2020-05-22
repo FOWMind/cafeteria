@@ -1,0 +1,27 @@
+/* ---- whatsapp ----*/
+.w-flotante {
+  background-color: green;
+  width: 8rem;
+  height: 2.5rem;
+  position: fixed;
+  bottom: 90px;
+  right: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  &:hover {
+    background-color: #2879ff;
+  }
+
+  .whatsapp {
+    width: auto;
+    height: 1em;
+  }
+
+  .whatsapp-text {
+    color: white;
+    font-weight: 600;
+  }
+}

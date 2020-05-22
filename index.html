@@ -1,37 +1,70 @@
 <!DOCTYPE html>
 <html lang="es-AR">
+
 <head>
+	<!-- meta -->
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
 	<meta name="description" content="¿Buscás relajarte con un buen café? Vení a uno de nuestros locales y disfrutá de la mejor calidad."/>
+
+	<!-- meta OG -->
+	<meta property="og:title" content="Cofften"/>
+	<meta property="og:site_name" content="Cofften"/>
+	<meta property="og:url" content="www.cofften.com.ar"/>
+	<meta property="og:description" content="¿Buscás relajarte con un buen café? Vení a uno de nuestros locales y disfrutá de la mejor calidad."/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:image" content="www.cofften.com.ar/assets/logo.png"/>
+
+
+	<!-- css -->
 	<link rel="stylesheet" href="assets/css/styles.css"/>
+	<link rel="stylesheet" href="assets/css/ajustes.css"/>
+
+	<!-- responsive -->
+	<link rel="stylesheet" href="assets/css/responsive.css"/>
+
+	<!-- favicon -->
 	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png"/>
+
 	<!--<script src="assets/js/..." type="text/javascript"></script>-->
-	<title>Título</title>
+	<title>Cofften</title>
 </head>
-<body>
+
+<body id="top">
+
+	<div class=w-flotante>
+		<a href="https://wa.me/5499999999999" target="_blank" class="text-decoration-none"><span class="whatsapp-text">WhatsApp </span><img src="assets/img/iconos/whatsapp.png" class="whatsapp" alt=""></a>
+	</div>
+
 	<header>
 		<section class="contenedor_navegacion">
 			<nav class="info_esencial">
-				<span>Lunes a Viernes de 9 a 20 hs.</span>
-				<span>Av. Constitución 2481</span>
-				<a href="#" target="_blank">
-				<figure>
-					<source src="assets/img/iconos/facebook.svg" type="image/png"/>
-					<img src="assets/img/iconos/facebook.png" draggable="false" alt="Facebook"/>
-				</figure>
-				</a>
+				<span>Lunes a Viernes de 9 a 20 hs. Av. Constitución 9999</span>
+				<div>
+					<a href="#" target="_blank">
+						<figure>
+							<source src="assets/img/iconos/facebook.svg" type="image/png" />
+							<img src="assets/img/iconos/facebook.png" draggable="false" alt="Facebook" />
+						</figure>
+					</a>
+					<a href="#" target="_blank">
+						<figure>
+							<source src="assets/img/iconos/instagram.svg" type="image/png" />
+							<img src="assets/img/iconos/instagram.png" draggable="false" alt="Instagram" />
+						</figure>
+					</a>
+				</div>
 			</nav>
 			<div class="navegacion">
 				<div class="logo">
-					<a href="index.html"><img src="assets/img/logo.png" draggable="false" alt="Cofften"/></a>
+					<a href="index.html"><img src="assets/img/cofften_logo.png" draggable="false" alt="Cofften" /></a>
 				</div>
 
-			
+
 				<nav>
-					<a href="#quienes_somos">Quiénes somos</a>
-					<a href="#contacto">Contacto</a>
-					<a href="#productos">Productos</a>
+					<a href="#seccion_quienes_somos">Quiénes somos</a>
+					<a href="#seccion_ubicacion">Ubicación</a>
+					<a href="#seccion_productos">Productos</a>
 				</nav>
 			</div>
 		</section>
@@ -57,22 +90,22 @@
 						</article>
 						<div class="cafes">
 							<div>
-								<img src="assets/img/cafes/cafe_con_leche.jpg" draggable="false" alt="Café con leche"/>
+								<img src="assets/img/cafes/cafe_con_leche.jpg" draggable="false" alt="Café con leche" />
 								<span>Café con leche</span>
 							</div>
-					
+
 							<div>
-								<img src="assets/img/cafes/cafe_con_crema.jpg" draggable="false" alt="Café con crema"/>
+								<img src="assets/img/cafes/cafe_con_crema.jpg" draggable="false" alt="Café con crema" />
 								<span>Café con crema</span>
 							</div>
-					
+
 							<div>
-								<img src="assets/img/cafes/cafe_frances.jpg" draggable="false" alt="Café francés"/>
+								<img src="assets/img/cafes/cafe_frances.jpg" draggable="false" alt="Café francés" />
 								<span>Café francés</span>
 							</div>
-					
+
 							<div>
-								<img src="assets/img/cafes/cafe_normal.jpg" draggable="false" alt="Café normal"/>
+								<img src="assets/img/cafes/cafe_normal.jpg" draggable="false" alt="Café normal" />
 								<span>Café normal</span>
 							</div>
 						</div>
@@ -98,105 +131,129 @@
 	</header>
 	<div id="contenedor">
 		<main>
+			<div id="seccion_productos" class="div_separador_bajo"></div>
 			<section id="productos">
-				<div class="producto">
-					<div class="foto_producto">
-						<figure>
-							<img src="assets/img/cafes/cafe_con_crema.jpg" draggable="false" alt="Producto 1"/>
-						</figure>
-					</div>
-					<article>
-						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit arcu condimentum mattis
-						</p>
-					</article>
-				</div>
+				<h2>Nuestros productos</h2>
 
-				<div class="producto">
-					<div class="foto_producto">
-						<figure>
-							<img src="assets/img/cafes/cafe_frances_alter.jpg" draggable="false" alt="Producto 2"/>
-						</figure>
+				<div class="contenedor_productos">
+					<div class="producto">
+						<div class="foto_producto">
+							<figure>
+								<img src="assets/img/cafes/cafe_con_crema.jpg" draggable="false" alt="Producto 1" />
+							</figure>
+						</div>
+						<article>
+							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit arcu condimentum mattis
+							</p>
+						</article>
 					</div>
-					<article>
-						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit arcu condimentum mattis
-						</p>
-					</article>
-				</div>
 
-				<div class="producto">
-					<div class="foto_producto">
-						<figure>
-							<img src="assets/img/cafes/cafe_con_leche_alter.jpg" draggable="false" alt="Producto 3"/>
-						</figure>
+					<div class="producto">
+						<div class="foto_producto">
+							<figure>
+								<img src="assets/img/cafes/cafe_frances_alter.jpg" draggable="false" alt="Producto 2" />
+							</figure>
+						</div>
+						<article>
+							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit arcu condimentum mattis
+							</p>
+						</article>
 					</div>
-					<article>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat nemo obcaecati velit facere cumque odio, debitis eius. Est, nam et, fuga laboriosam consectetur iusto eum quo porro accusantium modi nisi praesentium consequatur, delectus. Voluptatum, nemo facere similique hic incidunt velit, quasi laboriosam id natus temporibus, corporis voluptas eius blanditiis. Consequatur ipsa suscipit aperiam similique autem alias, sit labore aut ea iure nisi, neque recusandae velit illo amet voluptate enim animi accusamus voluptates molestiae dolores porro eius consectetur, hic. Dignissimos perspiciatis eveniet neque non, voluptate officia, similique, dolor, illo repudiandae in error officiis. Natus, non at voluptatibus, ipsam sit, dolores quibusdam exercitationem blanditiis omnis iusto minima dolor id, ipsum quaerat. Voluptas!
-						</p>
-					</article>
+
+					<div class="producto">
+						<div class="foto_producto">
+							<figure>
+								<img src="assets/img/cafes/cafe_con_leche_alter.jpg" draggable="false" alt="Producto 3" />
+							</figure>
+						</div>
+						<article>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat nemo obcaecati velit facere cumque odio, debitis eius. Est, nam et, fuga laboriosam consectetur iusto eum quo porro accusantium modi nisi praesentium consequatur, delectus. Voluptatum, nemo facere similique hic incidunt velit, quasi laboriosam id natus temporibus, corporis voluptas eius blanditiis. Consequatur ipsa suscipit aperiam similique autem alias, sit labore aut ea iure nisi, neque recusandae velit illo amet voluptate enim animi accusamus voluptates molestiae dolores porro eius consectetur, hic. Dignissimos perspiciatis eveniet neque non, voluptate officia, similique, dolor, illo repudiandae in error officiis. Natus, non at voluptatibus, ipsam sit, dolores quibusdam exercitationem blanditiis omnis iusto minima dolor id, ipsum quaerat. Voluptas!
+							</p>
+						</article>
+					</div>
 				</div>
 			</section>
-			<section id="articulo" class="clear">
+			<div id="seccion_quienes_somos" class="div_separador"></div>
+			<section id="quienes_somos" class="quienes_somos" class="clear">
+				<h2>Quiénes somos</h2>
+
+				<div class="foto_presentacion">
+					<figure>
+						<img src="assets/img/cafes/cafe_con_leche.jpg" draggable="false" alt="Presentación" />
+					</figure>
+				</div>
 				<article>
-						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit arcu condimentum mattis, magnis leo blandit at imperdiet erat porttitor integer suspendisse. Mi vivamus ultrices turpis sapien magna urna mus hendrerit sodales, ullamcorper malesuada interdum etiam lobortis felis per purus, vulputate eros pretium pellentesque taciti volutpat tellus faucibus
-						</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipiscing elit arcu condimentum mattis, magnis leo blandit at imperdiet erat porttitor integer suspendisse. Mi vivamus ultrices turpis sapien magna urna mus hendrerit sodales, ullamcorper malesuada interdum etiam lobortis felis per purus, vulputate eros pretium pellentesque taciti volutpat tellus faucibus
+					</p>
 				</article>
-				<div class="foto_articulo">
-					<figure>
-						<img src="" draggable="false" alt="foto artículo" />
-					</figure>
-				</div>			
 			</section>
-			<section id="resena_map" class="clear">
-				<div class="resena">
-					<article>
-						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit arcu condimentum mattis, magnis leo blandit at imperdiet erat porttitor integer suspendisse.
-						</p>
-					</article>
-				</div>
-				<div class="resena">
-					<figure>
-						<img src="" draggable="false" alt="reseña" />
-					</figure>
-					<article>
-						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit arcu condimentum mattis, magnis leo blandit at imperdiet erat porttitor integer suspendisse.
-						</p>
-					</article>
-				</div>
-				<div class="resena">
-					<article>
-						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit arcu condimentum mattis, magnis leo blandit at imperdiet erat porttitor integer suspendisse.
-						</p>
-					</article>
-				</div>	
-				<div id="map">
+
+			<div id="seccion_ubicacion" class="div_separador_bajo"></div>
+
+			<section id="resena_mapa" class="clear">
+				<h2>Dónde estamos</h2>
+				<div class="contenedor_info">
+					<div class="resenas">
+						<div class="resena">
+							<article>
+								<p>"Lorem ipsum dolor sit amet consectetur adipiscing elit arcu condimentum mattis, magnis leo blandit at imperdiet erat porttitor integer suspendisse"
+								</p>
+							</article>
+						</div>
+						<div class="resena">
+							<figure>
+								<img src="assets/img/cafes/cafe_con_leche.jpg" draggable="false" alt="reseña" />
+							</figure>
+							<article>
+								<p>"Lorem ipsum dolor sit amet consectetur adipiscing elit arcu condimentum mattis, magnis leo blandit at imperdiet erat porttitor integer suspendisse"
+								</p>
+							</article>
+						</div>
+						<div class="resena">
+							<article>
+								<p>"Lorem ipsum dolor sit amet consectetur adipiscing elit arcu condimentum mattis, magnis leo blandit at imperdiet erat porttitor integer suspendisse"
+								</p>
+							</article>
+						</div>
+					</div>
+					<div class="map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.5242713607413!2d-58.77604878507596!3d-34.413435854961335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9f096f8ef7b7%3A0xb1706ad9900b808a!2sAv.%20Constituci%C3%B3n%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1589932229740!5m2!1ses!2sar" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					</div>
 				</div>
 			</section>
-			<section id="whatsapp" class="clear"></section>
-			<div id="footer">
-				<footer>
-					<div id="redes_sociales">
-						<a href="enlace_facebook">
-							<figure>
-								<img src="" draggable="false" alt="facebook">
-							</figure>
-						</a>
-						<a href="enlace_instagram">
-							<figure>
-								<img src="" draggable="false" alt="instagram">
-							</figure>
-						</a>
-					</div>
-					<div id="copyright">
-						<p>
-							&copy; Cofften.<br/>
-							Todos los derechos reservados
-						</p>
-						<span>Las imágenes utilizadas en este sitio, no son parte de "Cofften" ni de asociados, sino de terceros. <a href="https://www.pexels.com/">Pexels</a> <a href="https://flaticon.es/">Flaticon</a>
-						</span>
-					</div>
-				</footer>
-			</div>
+
+			<div id="whatsapp" class="clear"></div>
 		</main>
+		<footer>
+			<div id="redes_sociales">
+				<h4>Nuestras redes</h4>
+				<div class="sociales_icons">
+					<a href="#" target="_blank">
+						<figure>
+							<source src="assets/img/iconos/facebook.svg" type="image/png" />
+							<img src="assets/img/iconos/facebook.png" draggable="false" alt="Facebook" />
+						</figure>
+					</a>
+					<a href="#" target="_blank">
+						<figure>
+							<source src="assets/img/iconos/instagram.svg" type="image/png" />
+							<img src="assets/img/iconos/instagram.png" draggable="false" alt="Instagram" />
+						</figure>
+					</a>
+				</div>
+			</div>
+			<div id="copyright">
+				<p>
+					&copy; Cofften. Todos los derechos reservados
+				</p>
+				<p>Las imágenes utilizadas en este sitio, no son parte de "Cofften" ni de asociados, sino de terceros. <a href="https://www.pexels.com/" target="_blank">Pexels</a> <a href="https://flaticon.es/" target="_blank">Flaticon</a>
+				</p>
+			</div>
+			<div id="subir">
+				<a href="#top">Ir al inicio</a>
+			</div>
+		</footer>
 	</div>
 
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">

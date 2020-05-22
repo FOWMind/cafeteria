@@ -83,12 +83,21 @@ header
 				color: $firstNavColor
 				float: left
 
-			a
-				color: $white
+			div
 				float: right
+				display: flex
+				align-items: center
+				justify-content: space-between
+
+				a
+					color: $white
+					margin-right: 1.5em
+
+					&:last-child
+						margin-right: 0
 				
-				&:hover
-					transform: scale(1.1)
+					&:hover
+						transform: scale(1.1)
 
 			source,
 			img
@@ -103,7 +112,7 @@ header
 			display: flex
 			justify-content: space-between
 			align-items: center
-			padding: 1.3em 1.5em
+			padding: 0 1.5em
 			background-color: $mainNavBg
 
 			.logo
@@ -318,13 +327,28 @@ header
 
 #contenedor
 
+	.div_separador
+		height: 3em
+
+	.div_separador_bajo
+		height: 1px
+		margin-bottom: -4em
+
+	h2
+		color: $darkCoffee
+		margin-bottom: 2em
+		text-align: center
+		font-size: 2.5em
+
 	#productos
+		margin: 10em 0
+
+	#productos .contenedor_productos
 		display: flex
 		justify-content: space-between
 		align-items: center
 		flex-wrap: wrap
 		overflow: hidden
-		margin-bottom: 1em
 
 		.producto
 			width: 33.333333333%
@@ -354,3 +378,133 @@ header
 				p
 					text-align: center
 					font-size: 15px
+
+	#quienes_somos
+		overflow: hidden
+		width: 100%
+		max-height: 400px
+		padding: 0 3em
+		margin: 5em 0 8em
+
+		article
+			float: right
+			width: 60%
+
+			p
+				max-width: 70%
+				margin-left: 3em
+
+		.foto_presentacion
+			float: left
+			width: 40%
+			height: 100%
+
+			figure, figure img
+				width: 100%
+				height: 100%
+
+			figure
+				overflow: hidden
+
+				img
+					object-fit: cover
+
+	#resena_mapa
+		height: 400px
+		margin: 8em 0
+
+		.contenedor_info
+			height: 100%
+
+	#resena_mapa .contenedor_info, #resena_mapa .resenas
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin: 5em 0
+
+		.resenas, .map
+			padding: 1em
+			height: 100%
+
+		.resenas
+			width: 50%
+			padding: 11em 1em 1em 1em
+
+			.resena
+				width: 33.3333333%
+				padding: 10px
+				text-align: center
+
+				&:nth-child(2)
+					margin-bottom: 12em
+
+				img
+					margin-bottom: 20px
+					border-radius: 50px
+					width: 100px
+					height: 100px
+					object-fit: cover
+
+				p
+					font-size: 14px
+
+		.map
+			width: 50%
+
+			iframe
+				border: none
+				width: 100%
+				height: 100%
+
+	footer
+		background-color: $darkCoffee
+		padding: 3em 2em
+		position: relative
+
+		h4, p, a
+			color: $white
+
+		h4
+			font-size: 2em
+			margin-bottom: .8em
+
+		#redes_sociales
+			margin-bottom: 3em
+
+		#redes_sociales div
+			display: flex
+			justify-content: flex-start
+
+			a
+				margin-right: .5em
+
+				&:last-child
+					margin-right: 0
+
+				figure, figure img
+					width: 30px
+					height: 30px
+
+		#copyright
+			p
+				font-size: 13px
+
+			a
+				color: $lightCoffee
+				text-decoration: underline
+
+				&:hover
+					text-decoration: none
+
+		#subir
+			position: absolute
+			bottom: 3em
+			right: 2em
+
+			a
+				padding: .8em
+				font-size: 14px
+				background-color: $coffee
+
+				&:hover
+					background-color: $lightCoffee
